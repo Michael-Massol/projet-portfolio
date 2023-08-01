@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CV index{% endblock %}
+
+{% block body %}
+    <h1>CV index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Experience</th>
+                <th>Formation</th>
+                <th>Interet</th>
+                <th>Competence</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for c_v in c_vs %}
+            <tr>
+                <td>{{ c_v.id }}</td>
+                <td>{{ c_v.experience }}</td>
+                <td>{{ c_v.formation }}</td>
+                <td>{{ c_v.interet }}</td>
+                <td>{{ c_v.competence }}</td>
+                <td>
+                    <a href="{{ path('app_c_v_show', {'id': c_v.id}) }}">show</a>
+                    <a href="{{ path('app_c_v_edit', {'id': c_v.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_c_v_new') }}">Create new</a>
+{% endblock %}
