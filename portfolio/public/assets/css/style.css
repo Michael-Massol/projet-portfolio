@@ -12,27 +12,6 @@ body
 	font-family:cursive;
 }
 
-.fond_tech {
-    position:absolute;
-	width: 100%;
-    height: 100%;
-	margin-top:0.5vh;
-    background:url("../images/water.png") repeat;
-	opacity: 0.5;
-	filter:blur(2px);
-}
-
-#glitters
-{
-	position:absolute;
-}
-
-#glitters img{
-  animation-duration: 8s;
-  animation-name: eclats;
-}
-
-
 .bulle
 {
 	margin-top:100%;
@@ -51,125 +30,6 @@ body
 	
 }
 
-#b1
-{
-	animation-delay:100ms;
-}
-
-#b2
-{
-	margin-left:0.5%;
-	animation-delay:1s;
-}
-
-#b3
-{
-	margin-left:1%;
-	animation-delay:2s;
-}
-
-#b4
-{
-	margin-left:2%;
-	animation-delay:3s;
-}
-
-#b5
-{
-	margin-left:4%;
-	animation-delay:4s;
-}
-
-#b6
-{
-	margin-left:0.5%;
-	animation-delay:5s;
-}
-
-#b7
-{
-	margin-left:3%;
-	animation-delay:6s;
-}
-
-#b8
-{
-	margin-left:1.5%;
-	animation-delay:7s;
-}
-
-#b9
-{
-	margin-left:2%;
-	animation-delay:8s;
-}
-
-#b10
-{
-	margin-left:1%;
-	animation-delay:9s;
-}
-
-#b11
-{
-	margin-left:90%;
-	animation-delay:100ms;
-}
-
-#b12
-{
-	margin-left:91.5%;
-	animation-delay:1s;
-}
-
-#b13
-{
-	margin-left:90.5%;
-	animation-delay:2s;
-}
-
-#b14
-{
-	margin-left:92%;
-	animation-delay:3s;
-}
-
-#b15
-{
-	margin-left:88%;
-	animation-delay:4s;
-}
-
-#b16
-{
-	margin-left:93%;
-	animation-delay:5s;
-}
-
-#b17
-{
-	margin-left:91%;
-	animation-delay:6s;
-}
-
-#b18
-{
-	margin-left:90%;
-	animation-delay:7s;
-}
-
-#b19
-{
-	margin-left:90.5%;
-	animation-delay:8s;
-}
-
-#b20
-{
-	margin-left:93%;
-	animation-delay:9s;
-}
-
 article + img 
 {
 		filter: brightness(1.04);
@@ -183,19 +43,6 @@ li, a, button
 	font-weight: 400;
 	color: white;
 	text-decoration: none;
-}
-
-header
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1vh 5%;
-	background-color: navy;
-	position: sticky;
-	top: 0%;
-	filter:brightness(120%);
-	z-index:10;
 }
 
 section
@@ -216,39 +63,8 @@ h1
 	font-size:225%;
 }
 
-header h1{
-	letter-spacing:5px;
-}
-
 h2{
 	font-size:180%;
-}
-
-.nav_links
-{
-	display:flex;
-	flex-direction:row;
-	flex-wrap: wrap;
-}
-
-.nav_links li
-{
-	list-style:none;
-	min-width:11.5vw;
-	padding: 4px;
-	margin: 0px 4px;
-	text-align:center;
-	background-color: blueviolet;
-	cursor:pointer;
-	font-size: 2vw;
-	letter-spacing:1px;
-	border-radius: 5px;
-}
-
-.nav_links li:hover
-{
-	color:#E0E0E0;
-	background-color: violet;
 }
 
 .a-propos
@@ -380,4 +196,8 @@ h2{
 
 #mini-desc{
 	font-size: x-large;
+}
+
+.projets li{
+	margin-bottom: 5vh;
 }

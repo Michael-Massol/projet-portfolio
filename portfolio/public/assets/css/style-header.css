@@ -1,0 +1,59 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: 0.25s ease-in-out;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vh 5%;
+	background-color: navy;
+	position: sticky;
+	top: 0%;
+	filter:brightness(120%);
+	z-index:10;
+}
+
+header li, header a, header button
+{
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+}
+
+header h1{
+	letter-spacing:5px;
+}
+
+
+.nav_links
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.nav_links li
+{
+	list-style:none;
+	min-width:11.5vw;
+	padding: 4px;
+	margin: 0px 4px;
+	text-align:center;
+	background-color: blueviolet;
+	cursor:pointer;
+	font-size: 2vw;
+	letter-spacing:1px;
+	border-radius: 5px;
+}
+
+.nav_links li:hover
+{
+	color:#E0E0E0;
+	background-color: violet;
+}

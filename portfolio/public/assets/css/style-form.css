@@ -1,0 +1,18 @@
+form{
+    width: 20%;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+form textarea{
+    justify-self: end;
+}
+
+td{
+    margin:2vw 2vw;
+}

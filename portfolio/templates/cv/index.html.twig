@@ -1,41 +1,45 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}CV index{% endblock %}
+{% block title %}Hello CvController!{% endblock %}
 
 {% block body %}
-    <h1>CV index</h1>
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<link rel="stylesheet" href="{{ asset('assets/css/cv-style.css') }}">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Experience</th>
-                <th>Formation</th>
-                <th>Interet</th>
-                <th>Competence</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for c_v in c_vs %}
-            <tr>
-                <td>{{ c_v.id }}</td>
-                <td>{{ c_v.experience }}</td>
-                <td>{{ c_v.formation }}</td>
-                <td>{{ c_v.interet }}</td>
-                <td>{{ c_v.competence }}</td>
-                <td>
-                    <a href="{{ path('app_c_v_show', {'id': c_v.id}) }}">show</a>
-                    <a href="{{ path('app_c_v_edit', {'id': c_v.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="6">no records found</td>
-            </tr>
+<div class="example-wrapper">
+    <h1>DÉVELOPPEUR WEB FRONT-END REACT.JS</h1>
+    <h3>À LA RECHERCHE D'UNE ALTERNANCE EN APPRENTISSAGE</h3>
+    <h4> À PARTIR DU 21 AOÛT</h4>
+    <ul class="categorie-style">
+       {% for formation in formation %}
+            <li>{{ formation.titre }}</li>
+            <li>{{ formation.contenu}}</li>
         {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('app_c_v_new') }}">Create new</a>
+        <button><a href="/formation">mettre à jour formations</a></button>
+    </ul>
+     <ul class="categorie-style">
+       {% for experience in experience %}
+            <li>{{ experience.titre }}</li>
+            <li>{{ experience.contenu}}</li>
+        {% endfor %}
+        <button><a href="/experience">mettre à jour experiences</a></button>
+    </ul>
+     <ul class="categorie-style">
+       {% for competence in competence %}
+            <li>{{ competence.titre }}</li>
+            <li>{{ competence.contenu}}</li>
+        {% endfor %}
+        <button><a href="/competence">mettre à jour competences</a></button>
+    </ul>
+     <ul class="categorie-style">
+       {% for interet in interet %}
+            <li> {{ interet.titre }}</li>
+            <li> {{ interet.contenu}}</li>
+        {% endfor %}
+        <button><a href="/interet">mettre à jour interet</a></button>
+    </ul>
+</div>
 {% endblock %}

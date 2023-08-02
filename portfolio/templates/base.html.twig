@@ -9,7 +9,21 @@
 
         {% block javascripts %}
         {% endblock %}
+        <link rel="stylesheet" href="{{ asset('assets/css/style-header.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/style-form.css') }}">
     </head>
+    <header>
+			<a href="/"><h1>Portfolio</h1></a>
+			<nav>
+				<ul class="nav_links">
+					<a href="/"><li>Accueil</li></a>
+                    <a href="/"><li>Se connecter</li></a>
+                     <a href="/register"><li>S'inscrire</li></a>
+					<a href="/projet"><li>Projets</li></a>
+					<a href="/cv"><li>Mon CV</li></a>
+				</ul>
+			</nav>
+		</header>
     <body>
         {% block body %}{% endblock %}
     </body>

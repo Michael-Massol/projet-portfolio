@@ -1,0 +1,23 @@
+ul li{
+    list-style: none;
+}
+
+ul li:first-child{
+    font-size: x-large;
+}
+
+button{
+    padding: 10px;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+h4{
+    margin-bottom: 5vh;
+}

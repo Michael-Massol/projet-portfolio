@@ -3,39 +3,6 @@
 {% block title %}Home{% endblock %}
 {% block body %}
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-	<header>
-			<a href="/"><h1>Portfolio</h1></a>
-			<nav>
-				<ul class="nav_links">
-					<a href="#accueil"><li>Accueil</li></a>
-					<a href="#a-propos"><li>À propos</li></a>
-					<a href="#competences"><li>Compétences</li></a>
-					<a href="#realisation"><li>Réalisations</li></a>
-					<a href="#cv"><li>CV</li></a>
-				</ul>
-                <a href="#cv">Se connecter</a>
-			</nav>
-		</header>
-		<div class="bulle" id="b1"></div>
-		<div class="bulle" id="b2"></div>
-		<div class="bulle" id="b3"></div>
-		<div class="bulle" id="b4"></div>
-		<div class="bulle" id="b5"></div>
-		<div class="bulle" id="b6"></div>
-		<div class="bulle" id="b7"></div>
-		<div class="bulle" id="b8"></div>
-		<div class="bulle" id="b9"></div>
-		<div class="bulle" id="b10"></div>
-		<div class="bulle" id="b11"></div>
-		<div class="bulle" id="b12"></div>
-		<div class="bulle" id="b13"></div>
-		<div class="bulle" id="b14"></div>
-		<div class="bulle" id="b15"></div>
-		<div class="bulle" id="b16"></div>
-		<div class="bulle" id="b17"></div>
-		<div class="bulle" id="b18"></div>
-		<div class="bulle" id="b19"></div>
-		<div class="bulle" id="b20"></div>
 	<main id="accueil">
 			<section class="a-propos" id="a-propos">
 				<article>
@@ -71,6 +38,7 @@
 							<i>
 							<p>PHP: 3/5</p>
 							<p>mySQL: 3/5</p>
+							<p>Symfony: 2.5/5</p>
 							</i>
 						</li>
 						<li>
@@ -104,49 +72,23 @@
 			</section>
 			<section class="realisation" id="realisation">
 				<article style="color: white;">
-					<h1 style="color: black;">Mes Réalisations</h1>
-					<h2 id="mini-desc">Voici une liste des projets que j'ai réalisés pendant mes études. En cliquant sur les images, vous pouvez obtenir un aperçu de chaque projet.</h2>
+					<h1 style="color: black;">Mes Projets</h1>
+					<h2 id="mini-desc">quelques projets réalisés durant mes études.</h2>
 				</article>
 				<article>
+				<button><a href="/projet" style="background-color:purple; padding:10px;">Voir Projets</a></button>
 					<ul class="projets">
 						<li>
-							<h2>Projet 1:</h2>
-							<a href="./assets/images/restaurant-app.html"><img src="./assets/images/restaurantapp-1.png" alt="image projet restaurant app"/></a>
-							<i>
-							<p><br>Projet réalisé avec: <br>React.js / TypeScript / JavaScript / HTML / CSS </p>
-							<br>
-							<a href="https://github.com/Michael-Massol/Restaurant-App" target="_blank"><h3>&rarr; lien repository github &larr;</h3></a>
-							<br>
-							<br>
-							</i>
+						<a href="https://github.com/Michael-Massol/Restaurant-App" target="_blank">
+							<img src="./assets/images/restaurantapp-1.png" alt="image projet restaurant app"/>
+						</a>
 						</li>
 						<li>
-							<h2>Projet 2:</h2>
-							<a href="./assets/images/movie-app.html"><img src="../../images/movieapp-1.png" alt="image front end"/></a>
-							<br>
-							<i>
-								<p>Projet réalisé avec: <br>React.js / TypeScript / JavaScript / HTML / CSS </p>
-								<br>
-								<a href="https://github.com/Michael-Massol/moviesapp" target="_blank"><h3>&rarr; lien repository github &larr;</h3></a>
-							</i>
+						<a href="https://github.com/Michael-Massol/moviesapp" target="_blank">
+							<img src="./assets/images/movieapp-1.png" alt="image front end"/>
+						</a>
 						</li>
 					</ul>
-				</article>
-			</section>
-			<section class="cv" id="cv">
-				<article>
-					<h1>Mon CV</h1>
-					<p style="text-align:center;">Vous pouvez télécharger mon CV en cliquant
-						<h2>
-							<img src="./assets/images/CV_Michael_Massol.png" alt="Image CV"/>
-							<div id="CV-mobile" style="text-align:center; background-color: darkblue; padding:1vh; border:0.5vh double white; width:10%; margin-left:45%; margin-top:3vh;">
-								<a href="./assets/images/CV_Michael_Massol.pdf" download=""><strong>Ici</strong></a>
-							</div>
-							<div id="CV-mobile2" style="text-align:center; background-color:darkblue; padding:1vh; border:0.5vh double white; margin-left:45%; margin-top:3vh; width: 20vw;">
-								<a href="./assets/images/CV_Michael_Massol.pdf" download=""><strong>Ici</strong></a>
-							</div>
-						</h2>
-					</p>
 				</article>
 			</section>
 		</main>
